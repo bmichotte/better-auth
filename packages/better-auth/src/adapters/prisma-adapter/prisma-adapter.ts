@@ -1,6 +1,7 @@
 import { getAuthTables } from "../../db";
 import type { Adapter, BetterAuthOptions, Where } from "../../types";
 import { generateId } from "../../utils";
+import { Prisma } from '@prisma/client'
 
 interface PrismaConfig {
 	/**
@@ -206,7 +207,7 @@ export const prismaAdapter =
 								[getField(model, sortBy.field)]:
 									sortBy.direction === "desc" ? "desc" : "asc",
 							}
-						: undefined,
+						: Prisma.skip,
 				})) as any[];
 				return result.map((r) => transformOutput(r, model));
 			},

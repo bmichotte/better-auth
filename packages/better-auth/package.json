@@ -374,7 +374,7 @@
     }
   },
   "devDependencies": {
-    "@prisma/client": "^5.19.1",
+    "@prisma/client": "^5.20.0",
     "@simplewebauthn/types": "^10.0.0",
     "@types/better-sqlite3": "^7.6.11",
     "@types/pg": "^8.11.6",
@@ -390,7 +390,7 @@
     "next": "^15.0.3",
     "oauth2-mock-server": "^7.1.2",
     "pg": "^8.12.0",
-    "prisma": "^5.19.1",
+    "prisma": "^5.20.0",
     "react": "^18.3.1",
     "react-native": "~0.74.6",
     "solid-js": "^1.8.18",
